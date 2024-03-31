@@ -1,0 +1,49 @@
+Report
+
+This C program demonstrates a classic producer-consumer model using multi-threading with POSIX threads (pthreads). It involves multiple producers and consumers operating on a shared queue with synchronization mechanisms. Here's the description of the code structure and the key functionalities implemented in this model:
+
+Utility Function for Logging:
+
+log_with_timestamp function is defined to log messages with a timestamp. This function formats and prints messages to standard output.
+
+Producer Function:
+
+The producer function represents producer threads. It generates random items and adds them to the shared queue. It waits on the can_produce condition variable if the queue is full. When the thread is adding data to the shared queue, it will be locked by the mutex and unlocked after producing. Also, I use difftime function to set the timeout hint.
+
+Consumer Function:
+
+The consumer function represents consumer threads. It removes items from the shared queue and processes them. It waits on the can_consume condition variable if the queue is empty. 
+
+Timeout Monitoring Function:
+
+The check_timeout function monitors the elapsed time and sets the timeout flag when the specified timeout duration is reached. It uses pthread_cond_broadcast to wake up all threads waiting on the condition variables.
+
+Main Function:
+
+The main function starts the program, initializes synchronization primitives, and parses command-line arguments to determine the number of producers, consumers, and the timeout value.
+
+It creates specified numbers of producer and consumer threads, as well as a timeout monitoring thread according to command line.
+
+The program waits for all threads to finish using pthread_join before cleaning up and exiting.
+
+Thread Creation and Synchronization:
+
+Producer and consumer threads are created using pthread_create and they run concurrently.
+
+The pthread_join function is used to wait for the completion of all threads, ensuring proper termination and synchronization of the program.
+
+Resource Cleanup:
+
+At the end of the main function, the mutex and condition variables are destroyed to clean up the resources.
+
+Overall, this program demonstrates a multi-threaded producer-consumer model with timeout handling, synchronized using mutexes and condition variables. It showcases how multiple threads can interact with shared resources in a controlled and synchronized manner.
+
+According to the 'htop', CPU% of mate-terminal present 0.7 when the program is running. And every single thread also present 0.7 one by one when one of them is activated. CPU% of mate-terminal react the use of resource of the whole process.
+
+In logfile, three consumer threads and two producer threads are generated. According to the timestamp, consumer consume the item soon after producer produced. It shows that consumer threads may in a waiting condition. 
+
+In logfile2, four consumer threads and four producer threads are generated. Consumers appear to be able to respond quickly to the item produced by producer. However, when producers generate items in rapid succession, the consumption records of consumers sometimes occur a few seconds after the production records. This may indicate that consumers are busy processing a previous data item during these moments. But the performance is pretty good overall because consumer can consume the items in time after all.
+
+Combine 'htop' and logfile one two, when the consumer threads' amount is close to the producers', the system perform well and the creation and exit of thread are very smooth.
+
+

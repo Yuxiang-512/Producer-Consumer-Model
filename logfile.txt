@@ -1,0 +1,76 @@
+[2024-01-31 08:54:57] Program started.
+[2024-01-31 08:54:57] Consumer started.
+[2024-01-31 08:54:57] Consumer started.
+[2024-01-31 08:54:57] Consumer started.
+[2024-01-31 08:54:57] Producer started.
+[2024-01-31 08:54:57] Producer produced: 83
+[2024-01-31 08:54:57] Consumer consumed: 83
+[2024-01-31 08:54:57] Producer started.
+[2024-01-31 08:54:57] Producer produced: 15
+[2024-01-31 08:54:57] Consumer consumed: 15
+[2024-01-31 08:54:58] Producer produced: 86
+[2024-01-31 08:54:58] Consumer consumed: 86
+[2024-01-31 08:55:00] Producer produced: 21
+[2024-01-31 08:55:00] Consumer consumed: 21
+[2024-01-31 08:55:00] Producer produced: 90
+[2024-01-31 08:55:00] Consumer consumed: 90
+[2024-01-31 08:55:02] Producer produced: 26
+[2024-01-31 08:55:02] Consumer consumed: 26
+[2024-01-31 08:55:02] Producer produced: 72
+[2024-01-31 08:55:02] Consumer consumed: 72
+[2024-01-31 08:55:03] Producer produced: 68
+[2024-01-31 08:55:03] Consumer consumed: 68
+[2024-01-31 08:55:04] Producer produced: 82
+[2024-01-31 08:55:04] Consumer consumed: 82
+[2024-01-31 08:55:04] Producer produced: 23
+[2024-01-31 08:55:04] Consumer consumed: 23
+[2024-01-31 08:55:05] Producer produced: 29
+[2024-01-31 08:55:05] Consumer consumed: 29
+[2024-01-31 08:55:06] Producer produced: 58
+[2024-01-31 08:55:06] Consumer consumed: 58
+[2024-01-31 08:55:07] Producer produced: 93
+[2024-01-31 08:55:07] Consumer consumed: 93
+[2024-01-31 08:55:08] Producer produced: 42
+[2024-01-31 08:55:08] Consumer consumed: 42
+[2024-01-31 08:55:10] Producer produced: 21
+[2024-01-31 08:55:10] Consumer consumed: 21
+[2024-01-31 08:55:12] Producer produced: 37
+[2024-01-31 08:55:12] Consumer consumed: 37
+[2024-01-31 08:55:14] Producer produced: 15
+[2024-01-31 08:55:14] Consumer consumed: 15
+[2024-01-31 08:55:14] Producer produced: 26
+[2024-01-31 08:55:14] Consumer consumed: 26
+[2024-01-31 08:55:15] Producer produced: 56
+[2024-01-31 08:55:15] Consumer consumed: 56
+[2024-01-31 08:55:15] Producer produced: 70
+[2024-01-31 08:55:16] Consumer consumed: 70
+[2024-01-31 08:55:16] Producer produced: 5
+[2024-01-31 08:55:16] Producer produced: 84
+[2024-01-31 08:55:17] Consumer consumed: 84
+[2024-01-31 08:55:17] Consumer consumed: 5
+[2024-01-31 08:55:18] Producer produced: 46
+[2024-01-31 08:55:18] Consumer consumed: 46
+[2024-01-31 08:55:18] Producer produced: 57
+[2024-01-31 08:55:18] Consumer consumed: 57
+[2024-01-31 08:55:22] Producer produced: 82
+[2024-01-31 08:55:22] Consumer consumed: 82
+[2024-01-31 08:55:22] Producer produced: 67
+[2024-01-31 08:55:22] Consumer consumed: 67
+[2024-01-31 08:55:22] Producer produced: 43
+[2024-01-31 08:55:22] Consumer consumed: 43
+[2024-01-31 08:55:22] Producer produced: 8
+[2024-01-31 08:55:23] Producer produced: 78
+[2024-01-31 08:55:24] Consumer consumed: 78
+[2024-01-31 08:55:26] Consumer consumed: 8
+[2024-01-31 08:55:26] Producer produced: 51
+[2024-01-31 08:55:26] Consumer consumed: 51
+[2024-01-31 08:55:26] Producer produced: 32
+[2024-01-31 08:55:26] Producer produced: 76
+[2024-01-31 08:55:27] Timeout reached. Stopping all threads.
+
+[2024-01-31 08:55:28] Consumer timeout, exiting...
+[2024-01-31 08:55:29] Consumer timeout, exiting...
+[2024-01-31 08:55:29] Producer timeout, exiting...
+[2024-01-31 08:55:30] Producer timeout, exiting...
+[2024-01-31 08:55:30] Consumer timeout, exiting...
+[2024-01-31 08:55:30] Program finished.
